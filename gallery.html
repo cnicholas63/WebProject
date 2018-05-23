@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<!-- This file produces a lightbox using Fancybox. www.fancyapps.com/fancybox/ The Fancybox code does not validate to HTML5 -->
+<head>
+    <title>Edge Hill</title>
+
+    <meta charset="utf-8"/>
+
+    <!-- Set to render in viewport without any scaling -->
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0" /> 
+
+    <!-- Base style sheet -->
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" /> 
+   
+    <script src="jQuery/jquery-1.11.0.js"></script> <!-- jQuery loaded - required for fancybox -->
+
+    <!-- Fancybox Light Box for images. Fancybox library was downloaded from www.fancyapps.com/fancybox/ -->
+    <link rel="stylesheet" href="./fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+		<script type="text/javascript" src="./fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$(".fancybox").fancybox();	
+			});
+		</script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header> <!-- The header contains the top image and logo using css -->
+			<a href="http://www.edgehill.ac.uk" title = "Edge Hill University Creative Edge" class="EHU-Logo" target="_blank">Edge Hill University </a>
+		</header>
+
+		<nav>
+			<a href="home.html">Home</a>
+			<a href="information.html">Information</a>
+			<a href="faq.html">FAQ</a>
+		</nav>
+
+		<section class="welcome"> <!--  Welcome section  -->
+			<h1>
+				Gallery
+			</h1>
+			<p>
+				Below are some images taken from around the campus and include The Creative Edge, The Hub, Running Track and last but not least the STUDENT BAR. Click on an image to view larger files:
+			</p>
+		</section>
+
+		<!-- This following code is as per the directions as indicated by Fancybox, however, it does not pass HTML validation  -->
+		<section class="gallery">
+			<!-- Gallery image links -->
+			<a class="fancybox" rel="group" href="images/LightBox/Large1.jpg"> <img src="images/LightBox/Small1.jpg" alt="" /></a>
+			<a class="fancybox" rel="group" href="images/LightBox/Large2.jpg"> <img src="images/LightBox/Small2.jpg" alt="" /></a>
+			<a class="fancybox" rel="group" href="images/LightBox/Large3.jpg"> <img src="images/LightBox/Small3.jpg" alt="" /></a>
+			<a class="fancybox" rel="group" href="images/LightBox/Large4.jpg"> <img src="images/LightBox/Small4.jpg" alt="" /></a>
+			<a class="fancybox" rel="group" href="images/LightBox/Large5.jpg"> <img src="images/LightBox/Small5.jpg" alt="" /></a>
+			<a class="fancybox" rel="group" href="images/LightBox/Large6.jpg"> <img src="images/LightBox/Small6.jpg" alt="" /></a>
+			<a class="fancybox" rel="group" href="images/LightBox/Large7.jpg"> <img src="images/LightBox/Small7.jpg" alt="" /></a>
+			<a class="fancybox" rel="group" href="images/LightBox/Large8.jpg"> <img src="images/LightBox/Small8.jpg" alt="" /></a>
+			<a class="fancybox" rel="group" href="images/LightBox/Large9.jpg"> <img src="images/LightBox/Small9.jpg" alt="" /></a>
+			<a class="fancybox" rel="group" href="images/LightBox/Large10.jpg"> <img src="images/LightBox/Small10.jpg" alt="" /></a>
+		</section>
+
+		<footer> <!--  Footer area  -->
+			&copy; 2014 Chris Nicholas <!-- Copyright notice -->
+		</footer>
+	</div> <!-- End of Wrapper div -->
+
+</body>
+</html>

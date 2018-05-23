@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Edge Hill</title>
+
+    <meta charset="utf-8"/>
+
+    <!-- Set to render in viewport without any scaling -->
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0" /> 
+
+    <!-- Style sheet -->
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" /> 
+
+    <script src="jQuery/jquery-1.11.0.js"></script> <!-- jQuery loaded -->
+    <script src="javaScript.js"></script> <!-- My external javascript file. -->
+</head>
+
+<body>
+  <div class="wrapper">
+    <header> <!-- The header contains the top image and logo using css -->
+      <a href="http://www.edgehill.ac.uk" title = "Edge Hill University Creative Edge" class="EHU-Logo" target="_blank">Edge Hill University </a>
+    </header>
+
+    <form id="frm" > <!-- action="home.html" --> <!-- Form for users name  -->
+        Name: <input type="text" name="name">
+        <button type="button" id="btn" onclick="validateInput()">Enter</button> <!-- Call validateInput when button clicked -->
+        <label id="message"></label>
+
+    </form> 
+ 
+    <section class="welcome"> <!--  Welcome section  -->
+      <h1>
+        Welcome
+      </h1>
+      <p>
+        Please enter your name in the field above and click 'Enter'
+      </p>
+    </section>
+
+    <section class="video"> <!-- Section containing Introduction Video -->
+      <!-- <iframe width="450" height="273" src="http://www.youtube.com/embed/jtGG1WLP1pk?rel=0" allowfullscreen></iframe> -->
+
+      <iframe width="420" height="315" src="http://www.youtube.com/embed/u4R-x0DMvCU?rel=0" frameborder="0" allowfullscreen></iframe>
+
+    </section>
+
+
+
+    <footer> <!--  Footer area  -->
+      &copy; 2014 Chris Nicholas <!-- Copyright notice -->
+    </footer>
+  </div> <!-- End of Wrapper div -->
+
+</body>
+</html>

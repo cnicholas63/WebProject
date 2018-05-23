@@ -1,0 +1,71 @@
+
+/* Large screen style options */
+@media (min-width:646px) {
+  header { /* Header contents */
+    height: 350px;
+    background-color: #EEE;
+    /* Two background images logo on top image underneath */
+    background: /*url("../images/Crest-LongSmall.png") no-repeat left 0px, */url("../images/CreativeEdgeLarge.jpg")  no-repeat right 0px ;
+  }
+
+  .EHU-Logo { /* Code to make background image hyperlink modified from Aaron Cambell range.re */
+    background-image: url("../images/Crest-LongSmall.png");
+    background-repeat: no-repeat;
+    display: block;
+    height: 100%;
+    text-indent: -9999px; /* render text from link off page */
+  } 
+
+  nav {
+  	margin:0;
+    padding:10px 0 10px 10px;
+    background-color: #97ab37;
+  }
+
+  nav a {
+  	display: inline-block;
+  	font-size: 1.5em;
+  	width: 28%;
+  	margin-left: 3%;	/* Set margin between links */
+  }
+
+  nav a:first-child { /* Pull first link back into line with body text */
+  	margin-left: 0; /* No margin before the first link, it is already spaced */
+  }
+
+  nav a:hover {
+  	color: #fff;
+  	background-color: #410c49;
+  }
+
+  .user { /* Colour for username text */
+  	float: right;
+  	color: #672770;
+  }
+
+  /* Large screen article layout */
+  .articles { /* Articles section */
+    padding: 0 10px 0 10px; /* Make sure content doesn't touch left or right of articles container */ 
+    overflow: hidden; /* Stop the articles section colapsing */
+  }
+
+  article {  /* individual articles */
+    width: 32%; /* 3 articles distributed across the page with space for a gutter */
+    float: left;
+  }
+
+
+  article.article1 { 
+    padding-right: 2%; /* Padding for gutter to right of container */
+  }
+
+  article.article2 {
+    padding-right: 2%;  /* Padding for gutter to right of container */
+  }
+
+  iframe { /* video player */
+        margin-left: 28%;
+        border:none;
+  }
+
+}

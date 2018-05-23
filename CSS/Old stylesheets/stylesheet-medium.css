@@ -1,0 +1,58 @@
+/* Medium screen style options */
+@media (min-width:501px) and (max-width:645px) {
+
+  header { /* Header contents */
+      height: 235px;
+      background-color: #EEE;
+      /* Two background images logo on top image underneath */
+      background: /*url("../images/Crest-LongSmall.png") no-repeat left 0px, */url("../images/CreativeEdgeMedium.jpg")  no-repeat right 0px ;
+  }
+
+  .EHU-Logo { /* Code to make background image hyperlink modified from Aaron Cambell range.re */
+    background-image: url("../images/Logo-MediumSmall.jpg");
+    background-repeat: no-repeat;
+    display: block;
+    height: 100%;
+    text-indent: -9999px; /* render text from link off page */
+  } 
+
+  nav {
+  	margin:0;
+      padding:10px 0 10px 10px; 
+      background-color: #97ab37;
+  }
+
+  nav a {
+  	display: inline-block;
+  	font-size: 1.5em;
+  	width: 28%;
+  	margin-left: 1%;	/* Set margin between links */
+  }
+
+  nav a:first-child { /* Pull first link back into line with body text */
+  	margin-left: 0;
+  }
+
+  nav a:hover {
+  	color: #fff;
+  	background-color: #410c49;
+  }
+
+  /* Medium screen article layout */
+  .articles { /* Articles section */
+      padding: 0 10px 0 10px; /* Make sure content doesn't touch left or right of articles container */ 
+      overflow: hidden; /* Stop the articles section colapsing */
+  }
+
+  article {  /* individual articles */
+      width: 100%; /* 3 articles now flow vertically */
+      padding: 0;
+  }
+
+  iframe { /* video player */
+        margin-left: 15%;
+        border:none;
+  }
+}
+
+

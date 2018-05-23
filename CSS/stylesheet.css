@@ -1,0 +1,293 @@
+/* Main overall stylesheet */
+.wrapper {
+    background-color: #fff; /* Wrapper background colour shows when window is wider than the body */
+}
+
+body {
+    max-width: 980px; /* Maximum width of body container */
+    margin: 0px auto 0px auto; /* Make the container float horizontally in center of window */
+    position: relative; /* container relative to parent */
+    padding: 0;
+    background-color: #2a4d6e;
+    font-family: Arial, Verdana, Helvetica, Sans-Serif;
+    font-size: 14px; /* Default font size */
+    line-height: 1.5em;
+}
+ 
+
+h1 {font-weight: normal; font-size: 2em; margin: .2em 0 .5em 0; } /* h1 font and spacing rules */
+
+h2 {font-weight: normal; font-size: 1.5em; margin: 0 0 .4em 0; } /* h2 font and spacing rules */
+
+h3 {font-weight: normal; font-size: 1.2em; margin: 0 0 1em 0; } /* h3 font and spacing rules */
+
+p {margin: 0 0 .75em 0; }
+
+.welcome {
+    padding: 0 10px 0 10px;
+}
+
+.topLogo {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+nav {
+    margin: 5px 0 5px 0;
+    padding: 5px 0 5px 0;
+    /*padding: 5px 0 5px 0;*/
+    color: #7E55BB;
+    background-color: #97ab37;
+
+}
+
+nav a {
+    /*padding: 0;*/
+    margin-left: .75em; /* Align nav test with body text */
+    text-decoration: none;
+    padding: 5px 5px 5px 10px;
+    color:  #410c49; /* Colour the a links */
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+#frm {
+    margin: 0;
+    padding: 12px 0 12px 10px;
+    color: #7E55BB;
+    background-color: #97ab37;
+}
+
+.article4 p { /* Tight spacing for the article4 (contact) details */
+    line-height: 1.1em;
+    margin: 0 0 .25em 0;
+
+}
+
+#user { /* Formatting for user name */
+    position: absolute;
+    margin: 2px;
+    right: 0;
+    top: 0;
+    background-color: #fff;
+    border: 1px solid black;
+}
+
+#message { /* Used to display error message at username input */
+    color: #a60000;
+    font-weight: bold;
+}
+
+.question { /* FAQ question formatting */
+    font-weight: bold;
+    line-height: 1.5em;
+    margin: 0px;
+
+}
+
+.gallery { /* Gallery thumbnails */
+    margin-left: .75em;
+}
+
+footer {
+    clear: both; /* Clear any floats to ensure footer sits across bottom of page */
+
+    background-color: #97ab37;
+    padding: 0 10px 0 10px;
+}
+
+
+/* ====================Large screen style options======================== */
+@media (min-width:646px) {
+  header { /* Header contents */
+    height: 350px;
+    background-color: #EEE;
+    /* Two background images logo on top image underneath */
+    background: /*url("../images/Crest-LongSmall.png") no-repeat left 0px, */url("../images/CreativeEdgeLarge.jpg")  no-repeat right 0px ;
+  }
+
+  .EHU-Logo { /* Code to make background image hyperlink modified from Aaron Cambell range.re */
+    background-image: url("../images/Crest-LongSmall.png");
+    background-repeat: no-repeat;
+    display: block;
+    height: 100%;
+    text-indent: -9999px; /* render text from link off page */
+  } 
+
+  nav {
+    margin:0;
+    padding:10px 0 10px 10px;
+    background-color: #97ab37;
+  }
+
+  nav a {
+    display: inline-block;
+    font-size: 1.5em;
+    width: 28%;
+    margin-left: 3%;    /* Set margin between links */
+  }
+
+  nav a:first-child { /* Pull first link back into line with body text */
+    margin-left: 0; /* No margin before the first link, it is already spaced */
+  }
+
+  nav a:hover {
+    color: #fff;
+    background-color: #410c49;
+  }
+
+  .user { /* Colour for username text */
+    float: right;
+    color: #672770;
+  }
+
+  /* Large screen article layout */
+  .articles { /* Articles section */
+    padding: 0 10px 0 10px; /* Make sure content doesn't touch left or right of articles container */ 
+    overflow: hidden; /* Stop the articles section colapsing */
+  }
+
+  article {  /* individual articles */
+    width: 32%; /* 3 articles distributed across the page with space for a gutter */
+    float: left;
+  }
+
+
+  article.article1 { 
+    padding-right: 2%; /* Padding for gutter to right of container */
+  }
+
+  article.article2 {
+    padding-right: 2%;  /* Padding for gutter to right of container */
+  }
+
+  iframe { /* video player */
+        margin-left: 28%;
+        border:none;
+  }
+
+}
+
+/* ======================Medium screen style options======================= */
+@media (min-width:501px) and (max-width:645px) {
+
+  header { /* Header contents */
+      height: 235px;
+      background-color: #EEE;
+      /* Two background images logo on top image underneath */
+      background: /*url("../images/Crest-LongSmall.png") no-repeat left 0px, */url("../images/CreativeEdgeMedium.jpg")  no-repeat right 0px ;
+  }
+
+  .EHU-Logo { /* Code to make background image hyperlink modified from Aaron Cambell range.re */
+    background-image: url("../images/Logo-MediumSmall.jpg");
+    background-repeat: no-repeat;
+    display: block;
+    height: 100%;
+    text-indent: -9999px; /* render text from link off page */
+  } 
+
+  nav {
+    margin:0;
+      padding:10px 0 10px 10px; 
+      background-color: #97ab37;
+  }
+
+  nav a {
+    display: inline-block;
+    font-size: 1.5em;
+    width: 28%;
+    margin-left: 1%;    /* Set margin between links */
+  }
+
+  nav a:first-child { /* Pull first link back into line with body text */
+    margin-left: 0;
+  }
+
+  nav a:hover {
+    color: #fff;
+    background-color: #410c49;
+  }
+
+  /* Medium screen article layout */
+  .articles { /* Articles section */
+      padding: 0 10px 0 10px; /* Make sure content doesn't touch left or right of articles container */ 
+      overflow: hidden; /* Stop the articles section colapsing */
+  }
+
+  article {  /* individual articles */
+      width: 100%; /* 3 articles now flow vertically */
+      padding: 0;
+  }
+
+  iframe { /* video player */
+        margin-left: 15%;
+        border:none;
+  }
+}
+
+/* ==========================Small screen style options========================*/
+
+@media (min-width:200px) and (max-width:500px) {
+  header { /* Header contents */
+      height: 183px;
+      background-color: #EEE;
+      /* Two background images logo on top image underneath */
+      background: url("../images/CreativeEdgeSmall.jpg")  no-repeat right 0px ;
+  } 
+
+  .EHU-Logo { /* Code to make background image hyperlink modified from Aaron Cambell range.re */
+    background-image: url("../images/Logo-Small.png");
+    background-repeat: no-repeat;
+    display: block;
+    height: 100%;
+    text-indent: -9999px; /* render text from link off page */
+  } 
+
+  nav {
+    margin:0;
+    padding:10px 0 10px 10px; 
+    background-color: #97ab37;
+    width: 100%;
+
+  }
+
+  nav a {
+    display: block;
+    font-size: 1.5em;
+    width: 90%;
+    margin: 5px 0 5px 0; /* Vertically space links */
+  }
+
+  nav a:first-child { /* Pull first link back into line with body text */
+  /*    margin-left: 0;*/
+  }
+
+  nav a:hover {
+    color: #fff;
+    background-color: #410c49;
+  }
+
+  .user { /* Colour for username text */
+    float: none;
+    color: #672770;
+  }
+
+  /* Small screen article layout */
+  .articles { /* Articles section */
+      padding: 0 10px 0 10px; /* Make sure content doesn't touch left or right of articles container */ 
+      overflow: hidden; /* Stop the articles section colapsing */
+  }
+
+  article {  /* individual articles */
+      width: 100%; /* 3 articles now flow vertically */
+      padding: 0;
+  }
+
+  iframe { /* video player */
+        margin-left: 5%;
+        width:80%;
+        border:none;
+  }
+}
+

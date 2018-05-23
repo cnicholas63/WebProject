@@ -1,0 +1,63 @@
+/* Small screen style options */
+
+@media (max-width:500px) {
+  header { /* Header contents */
+      height: 183px;
+      background-color: #EEE;
+      /* Two background images logo on top image underneath */
+      background: url("../images/CreativeEdgeSmall.jpg")  no-repeat right 0px ;
+  }	
+
+  .EHU-Logo { /* Code to make background image hyperlink modified from Aaron Cambell range.re */
+    background-image: url("../images/Logo-Small.png");
+    background-repeat: no-repeat;
+    display: block;
+    height: 100%;
+    text-indent: -9999px; /* render text from link off page */
+  } 
+
+  nav {
+  	margin:0;
+    padding:10px 0 10px 10px; 
+    background-color: #97ab37;
+    width: 100%;
+
+  }
+
+  nav a {
+  	display: block;
+  	font-size: 1.5em;
+  	width: 90%;
+  	margin: 5px 0 5px 0; /* Vertically space links */
+  }
+
+  nav a:first-child { /* Pull first link back into line with body text */
+  /*	margin-left: 0;*/
+  }
+
+  nav a:hover {
+  	color: #fff;
+  	background-color: #410c49;
+  }
+
+  .user { /* Colour for username text */
+  	float: none;
+  	color: #672770;
+  }
+
+  /* Small screen article layout */
+  .articles { /* Articles section */
+      padding: 0 10px 0 10px; /* Make sure content doesn't touch left or right of articles container */ 
+      overflow: hidden; /* Stop the articles section colapsing */
+  }
+
+  article {  /* individual articles */
+      width: 100%; /* 3 articles now flow vertically */
+      padding: 0;
+  }
+
+  iframe { /* video player */
+        margin-left: 5%;
+        border:none;
+  }
+}
